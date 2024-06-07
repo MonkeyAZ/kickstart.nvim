@@ -60,6 +60,9 @@ return {
         --   },
         -- },
         -- pickers = {}
+        defaults = {
+          path_display = { 'truncate' },
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
