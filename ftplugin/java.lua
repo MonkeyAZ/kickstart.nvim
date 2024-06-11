@@ -9,6 +9,11 @@ local status, jdtls = pcall(require, 'jdtls')
 if not status then
   return
 end
+
+if not mason_status then
+  return
+end
+
 local extendedClientCapabilities = jdtls.extendedClientCapabilities
 
 local JDTLS_PATH = mason.get_package('jdtls'):get_install_path()
